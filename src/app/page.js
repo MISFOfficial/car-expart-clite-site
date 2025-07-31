@@ -1,6 +1,9 @@
+import Navigation from "./components/Navigation";
+
 export default function Home() {
   return (
-    <div className="place-items-center place-content-center border h-screen">
+    <div className="">
+      <Navigation></Navigation>
       <h1 className="text-3xl font-bold">Car Exparts Projects</h1>
     </div>
   );
