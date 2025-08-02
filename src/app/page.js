@@ -1,10 +1,11 @@
+import Services from "./components/Services/Services";
 
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="py-5 md:py-10 px-2 md:px-0">
 
-      <h1 className="text-3xl font-bold">Car Exparts Projects</h1>
+      <Services></Services>
 
     </div>
   );
