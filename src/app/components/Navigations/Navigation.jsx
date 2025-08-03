@@ -1,5 +1,6 @@
 import React from 'react';
 import NavLink from './NavLink';
+import Link from 'next/link';
 
 
 const Navigation = () => {
@@ -23,8 +24,11 @@ const Navigation = () => {
                    <NavLink></NavLink>
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn btn-outline rounded-2xl text-xl font-thin p-8">Appointment</a>
+
+            <div className="navbar-end gap-3">
+                <Link href={'/signin'}><button className='btn btn-outline'>Sign In</button></Link>
+                <Link href={'/register'}><button className='btn btn-outline'>Register</button></Link>
+                <a className="btn btn-outline text-xl font-thin">Appointment</a>
             </div>
         </div>
     );

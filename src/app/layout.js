@@ -12,11 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body suppressHydrationWarning className="">
         <Navigation></Navigation>
         <QueryProvider>
-          <div className="max-w-[1280px] mx-auto">
+          <div className="max-w-[1280px] mx-auto py-5 md:py-10">
             {children}
           </div>
         </QueryProvider>
